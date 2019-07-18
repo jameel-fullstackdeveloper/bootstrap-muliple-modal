@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Bootstrap Modal Popup</h1>
+  <h3>Close current and Open New One</h3>
+  
+ <!-- Button trigger modal 1-->
+<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+  Open Modal 1
+</button></p>
+
+<!-- Button trigger modal 2-->
+<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+  Open Modal 2
+</button></p>
+
+<!-- Button trigger modal 3-->
+<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+   Open Modal 3
+</button></p>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+      </div>
+      <div class="modal-footer">
+		<!--- use data-dismiss attribute to close the current modal popup-->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2" data-dismiss="modal">
+				Close & Open Modal 2
+	    </button>
+	  
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3" data-dismiss="modal">
+				Close & Open Modal 3
+	    </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal 2 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+      </div>
+      <div class="modal-footer">
+	  <!--- use data-dismiss attribute to close the current modal popup-->
+       	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" data-dismiss="modal">
+				Close & Open Modal 1
+	    </button>
+	  
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3" data-dismiss="modal">
+				Close & Open Modal 3
+	    </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal 3 -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal 3</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+      </div>
+      <div class="modal-footer">
+	  <!--- use data-dismiss attribute to close the current modal popup-->
+        	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" data-dismiss="modal">
+				Close & Open Modal 1
+	    </button>
+	  
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2" data-dismiss="modal">
+				Close & Open Modal 2
+	    </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<h3>Use data-dismiss attribute to close the current modal popup</h3>
+
+	<p>Happy coding</p>
+  
+  
+  <!-- default js files for bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
